@@ -1,0 +1,112 @@
+# Symbols no library, runtime or megatouch-host provides (2026-10-07)
+# megatouch-host loads the game with RTLD_NOW, so each of these must be defined
+# (usually in src/host/loader_services.cpp) before the game will start.
+# symbol | needed by
+IsScreenTouched() | magiccharms.so
+Card_ProcessRTPackets(unsigned char) | magiccharms.so
+MeritthonDisplayRound(int, int, int, unsigned long) | magiccharms.so
+t_i_l() | magiccharms.so
+GetMyId() | magiccharms.so
+u_m_m_s(char const*, char*, char*, unsigned int) | magiccharms.so
+QueFlush(bool) | magiccharms.so
+TextSystem::LoadTranslations(xml_gameinfo::GameIds) | magiccharms.so
+Translator::nTranslate(char*, unsigned int, char const*) | magiccharms.so
+WorldClass::FrameNumber(Bitmap*) | magiccharms.so
+WorldClass::WaitOnFrame(unsigned long, bool) | magiccharms.so
+WorldClass::CopyCompBitmap(Bitmap*, int, int, int, int, int, int, int, int, int, int, bool) | magiccharms.so
+WorldClass::LoadBmp(char const*, int, float, int, int, bool, bool, Bitmap*) | magiccharms.so
+WorldClass::SetBack(char const*, int) | magiccharms.so
+WorldClass::ShowAll() | magiccharms.so
+WorldClass::GetFrame(Bitmap*, int) | magiccharms.so
+WorldClass::DeleteBmp(Bitmap*, unsigned char) | magiccharms.so
+WorldClass::NextFrame(unsigned char, unsigned char, bool, bool, bool, bool) | magiccharms.so
+WorldClass::PlayMovie(int, unsigned long, void (*)(unsigned char), unsigned char, bool, bool, bool, bool) | magiccharms.so
+WorldClass::WorldClass() | magiccharms.so
+SystemClass::FlushKB() | magiccharms.so
+system_info::Get_Motherboard_Type() | magiccharms.so
+xml_gamerandom::GameSettingsHighRun_record::AdjustTime(int, long) | magiccharms.so
+xml_gamerandom::GameSettingsHighRun_record::copy(abstract_record const*) | magiccharms.so
+xml_gamerandom::GameSettingsHighRun_record::GameSettingsHighRun_record() | magiccharms.so
+xml_gamerandom::GameSettingsHighRun_record::~GameSettingsHighRun_record() | magiccharms.so
+abstract_xml_record::AdjustTimeFields(int, long) | magiccharms.so
+abstract_xml_record::AddChild(abstract_xml_record*, char const*, unsigned int) | magiccharms.so
+abstract_xml_record::NewChild(char*) | magiccharms.so
+List::UnLinkAndAdvance() | magiccharms.so
+List::Push(Group*) | magiccharms.so
+List::Clear(unsigned char) | magiccharms.so
+List::Advance(int) | magiccharms.so
+List::IsEmpty() | magiccharms.so
+List::Contains(Group*) | magiccharms.so
+List::LinkInto(Group*, int) | magiccharms.so
+List::List(List*) | magiccharms.so
+List::~List() | magiccharms.so
+Books::Credits(xml_gameinfo::GameIds, enums::Span) | magiccharms.so
+Books::Instance() | magiccharms.so
+Group::Signal(Group::SpriteSignalType) | magiccharms.so
+Group::Signal(SpriteSignal*) | magiccharms.so
+Group::Message(Group::SpriteSignalType) | magiccharms.so
+Group::Message(SpriteSignal*) | magiccharms.so
+USBIO::FoundUSB() | magiccharms.so
+Bitmap::CreateSmackTextBox(char const*, FontBase*, signed char, unsigned short, unsigned short, bool) | magiccharms.so
+Bitmap::GreyBmp() | magiccharms.so
+EventO::GetType() | magiccharms.so
+EventO::EventO() | magiccharms.so
+EventO::~EventO() | magiccharms.so
+Sprite::DoNextFrame() | magiccharms.so
+Sprite::SpriteClick() | magiccharms.so
+Sprite::AssignString(String*, unsigned long) | magiccharms.so
+Sprite::ClicksEnabled | magiccharms.so
+Sprite::DeleteAfterLast(unsigned long) | magiccharms.so
+Sprite::RunDiskAnimThenDelete(char const*, unsigned long, float, unsigned long, bool) | magiccharms.so
+Sprite::Move(int, int, int, int, int, int, unsigned long, unsigned long, unsigned char) | magiccharms.so
+Sprite::Curve(int, int, int, int, int, int, int, int, int, int, int, int, unsigned long, unsigned long, unsigned char) | magiccharms.so
+Sprite::Reset() | magiccharms.so
+Sprite::DoDraw() | magiccharms.so
+Sprite::Enable(unsigned long) | magiccharms.so
+Sprite::FadeIn(unsigned long, unsigned long, int, int) | magiccharms.so
+Sprite::SetBmp(Bitmap*, unsigned long) | magiccharms.so
+Sprite::Signal(Group::SpriteSignalType) | magiccharms.so
+Sprite::Signal(SpriteSignal*) | magiccharms.so
+Sprite::Disable(unsigned long, bool) | magiccharms.so
+Sprite::FadeOut(unsigned long, unsigned long, int, int) | magiccharms.so
+Sprite::Message(Group::SpriteSignalType) | magiccharms.so
+Sprite::Message(SpriteSignal*) | magiccharms.so
+Sprite::RunAnim(Bitmap*, int, int, int, unsigned long, float, unsigned long, int) | magiccharms.so
+Sprite::SetCord(float, float, float, unsigned long) | magiccharms.so
+Sprite::SetSize(int, int) | magiccharms.so
+Sprite::DoCommand(int) | magiccharms.so
+Sprite::PlaySound(char*, int, unsigned long) | magiccharms.so
+Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | magiccharms.so
+Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | magiccharms.so
+Sprite::~Sprite() | magiccharms.so
+String::String(char const*, int, char const*, int, signed char, int, int, int, unsigned char, unsigned char, unsigned short) | magiccharms.so
+Settings::Init() | magiccharms.so
+Settings::Load() | magiccharms.so
+Settings::Cleanup() | magiccharms.so
+Settings::Restore(abstract_xml_record const*) | magiccharms.so
+Settings::Settings(char const*, unsigned int) | magiccharms.so
+Settings::~Settings() | magiccharms.so
+GameClass::GameClass() | magiccharms.so
+GameClass::~GameClass() | magiccharms.so
+xml_gamerandom::GameSettingsHighRun_record::cTag() const | magiccharms.so
+xml_gamerandom::GameSettingsHighRun_record::eTag() const | magiccharms.so
+xml_gamerandom::GameSettingsHighRun_record::clone() const | magiccharms.so
+xml_gamerandom::GameSettingsHighRun_record::equal(abstract_record const*) const | magiccharms.so
+xml_gamerandom::GameSettingsHighRun_record::Metadata() const | magiccharms.so
+xml_gamerandom::GameSettingsHighRun_record::not_equal(abstract_record const*) const | magiccharms.so
+abstract_xml_record::ChildCount() const | magiccharms.so
+abstract_xml_record::GetChildren() const | magiccharms.so
+abstract_xml_record::ChildName(int) const | magiccharms.so
+Settings::Key(unsigned int, bool) const | magiccharms.so
+typeinfo for EventO | magiccharms.so
+typeinfo for Sprite | magiccharms.so
+typeinfo for Settings | magiccharms.so
+typeinfo for GameClass | magiccharms.so
+typeinfo for xml_gamerandom::GameSettingsHighRun_record | magiccharms.so
+vtable for DOSLinuxWorld | magiccharms.so
+clear_bitmap | magiccharms.so
+gfx_driver | magiccharms.so
+screen | magiccharms.so
+voice_ramp_volume | magiccharms.so
+voice_set_frequency | magiccharms.so
+voice_sweep_frequency | magiccharms.so
