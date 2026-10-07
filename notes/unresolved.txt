@@ -2,13 +2,6 @@
 # megatouch-host loads the game with RTLD_NOW, so each of these must be defined
 # (usually in src/host/loader_services.cpp) before the game will start.
 # symbol | needed by
-IsScreenTouched() | magiccharms.so
 t_i_l() | magiccharms.so
 SystemClass::FlushKB() | magiccharms.so
 USBIO::FoundUSB() | magiccharms.so
-GameClass::GameClass() | magiccharms.so
-GameClass::~GameClass() | magiccharms.so
-typeinfo for GameClass | magiccharms.so
-voice_ramp_volume | magiccharms.so
-voice_set_frequency | magiccharms.so
-voice_sweep_frequency | magiccharms.so
